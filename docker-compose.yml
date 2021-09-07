@@ -1,0 +1,25 @@
+version: '3'
+services:
+   client:
+      image: "mounikamyla/shopping-list:client"
+      container_name: client-forntend
+      ports:
+        - 3000:3000
+          # networks:
+              # mynet:
+                # driver: bridge
+           # ipam:
+                   #driver: default
+             # config:
+                     #              - subnet:
+#13.232.70.175
+        
+
+   backend:
+      image: "mounikamyla/shopping-list:backend"
+      container_name: backend
+      ports:
+        - 5000:5000
+          #networks:
+          #vpcbr:
+          #ipv4_address: 13.127.59.201
