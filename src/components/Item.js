@@ -35,6 +35,7 @@ axios.delete(`api/list/${id}`)
 return(
       <div>
         <h1>My Item</h1>
+        <h3>Add items to this list</h3>
         <Input getList={this.getList}/>
         <List list={list} deleteItem={this.deleteItem}/>
       </div>
