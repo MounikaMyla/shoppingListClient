@@ -27,11 +27,11 @@
       "react-app/jest"
     ]
   },
-  "proxy": {
-     "/api/*": {
-	 "target": "http://13.232.70.175:5000"
-     }
-  },
+  #"proxy": {
+   #  "/api/*": {
+#	 "target": "http://13.232.70.175:5000"
+ #    }
+  #},
   "browserslist": {
     "production": [
       ">0.2%",
