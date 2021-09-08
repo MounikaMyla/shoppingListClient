@@ -1,9 +1,9 @@
 node {
     checkout scm
 
-    docker.withRegistry(‘https://registry.example.com', ‘credentials-id’) {
+    docker.withRegistry(‘https://registry.hub.docker.com', ‘mounikamyla’) {
 
-         def customImage = docker.build(“my-image:${env.BUILD_ID}”)
+         def customImage = docker.build(shoppingclient/dockerwebapp)
   
          customImage.push()
     }
