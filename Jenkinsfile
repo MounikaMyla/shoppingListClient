@@ -5,7 +5,7 @@ pipeline {
         //once you sign up for Docker hub, use that user_id here
         registry = "mounikamyla/shoppinglistclient"
         dockerImage = ''
-        registryCredential = 'docker'
+        registryCredential = 'dockerhub_id'
     }
     
     stages {
